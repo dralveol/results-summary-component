@@ -86,7 +86,7 @@ body {
 	align-items: center;
 }
 
-.total_result h1 {
+.total_result h2 {
 	font-weight: 700;
 	line-height: 1.33rem;
 	color: var(--Light-lavender);
@@ -108,7 +108,7 @@ body {
 	font-weight: 800;
 	color: white;
 }
-.total_result h2 {
+.total_result h3 {
 	font-weight: 700;
 	font-size: 1.3rem;
 	line-height: 1.7rem;
@@ -124,7 +124,7 @@ body {
 .summary_result {
 	padding: 1.6rem;
 }
-.summary_result h1 {
+.summary_result h2 {
 	margin-bottom: .4rem;
 	font-weight: 700;
 	line-height: 1.3rem;
