@@ -1,0 +1,226 @@
+/*Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom properties*/
+:root{
+	--Light-red: hsl(0, 100%, 67%);
+	--Orangey-yellow: hsl(39, 100%, 56%);
+	--Green-teal: hsl(166, 100%, 37%);
+	--Cobalt-blue: hsl(234, 85%, 45%);
+	--Light-slate-blue-background: hsl(252, 100%, 67%);
+	--Light-royal-blue-background: hsl(241, 81%, 54%);
+	--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+	--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+	--White: hsl(0, 0%, 100%);
+	--Pale-blue: hsl(221, 100%, 96%);
+	--Light-lavender: hsl(241, 100%, 89%);
+	--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+/*Styling*/
+html {
+	font-size: 18px;
+}
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	background-color: var(--Pale-blue);
+}
+
+/*Mobile First*/
+.total_result {
+	background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);;
+	padding: 2rem;
+	text-align: center;
+	border-bottom-left-radius: 32px;
+	border-bottom-right-radius: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.total_result h1 {
+	font-weight: 700;
+	line-height: 1.33rem;
+	color: var(--Light-lavender);
+}
+.total_result .note-in-circle {
+	margin: 1.33rem 0;
+	background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+	border-radius: 50%;	
+	width: 6rem;
+	height: 6rem;
+	padding: 1.3rem;
+	font-size: .8rem;
+	color: hsla(241, 100%, 89%, .7);
+	font-weight: 700;
+}
+#note {
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 800;
+	color: white;
+}
+.total_result h2 {
+	font-weight: 700;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+	color: white;
+}
+.total_result p {
+	font-weight: 500;
+	line-height: 1.1rem;
+	font-size: .9rem;
+	color: var(--Light-lavender);
+}
+
+.summary_result {
+	padding: 1.6rem;
+}
+.summary_result h1 {
+	margin-bottom: .4rem;
+	font-weight: 700;
+	line-height: 1.3rem;
+	color: var(--Dark-gray-blue);
+}
+.summary_result .result_container {
+	margin: .88rem 0;
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 12px;
+}
+.summary_result .result_container img {
+	margin-right: .6rem;
+	width: .9rem;
+}
+.topic {
+	font-size: .8rem;
+	font-weight: 500;
+	line-height: 1.11rem;
+}
+.result {
+	font-weight: 700;
+	line-height: 1.11rem;
+	font-size: .8rem;
+	color: hsla(224, 30%, 27%, .7);
+}
+.inline_result {
+	color: var(--Dark-gray-blue);
+	font-weight: 700;
+}
+.reaction_container {
+	background-color:  hsla(0, 100%, 67%, .05);
+}
+
+.topic_reaction {
+	color: var(--Light-red);
+}
+
+.memory_container {
+	background-color:  hsla(39, 100%, 56%, .05);
+}
+.topic_memory {
+	color: var(--Orangey-yellow);
+}
+
+.verbal_container {
+	background-color:  hsla(166, 100%, 37%, .05);
+}
+.topic_verbal {
+	color: var(--Green-teal);
+}
+
+.visual_container {
+	background-color:  hsla(234, 85%, 45%, .05);
+}
+.topic_visual {
+	color: var(--Cobalt-blue);
+}
+.summary_result button {
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--Dark-gray-blue);
+	border-radius: 128px;
+	border: none;
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.27rem;
+}
+
+@media only screen and (min-width: 1000px){
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20%;
+	}
+	article {
+		display: flex;
+		background-color: white;
+		border-radius: 32px;
+	}
+	.total_result {
+		width: 50%;
+		border-radius: 32px;
+	}
+	.summary_result {
+		width: 50%;
+		background-color: white;
+		border-top-right-radius: 32px;
+		border-bottom-right-radius: 32px;
+	}
+	button:hover {
+		background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+	}
+}
